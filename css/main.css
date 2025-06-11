@@ -1,0 +1,163 @@
+/*colores*/
+.blue {
+    color: #3576b8;
+}
+
+/* formateo de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans";
+}
+
+/* header nav */
+
+.contenedor-navegacion {
+    background-color: rgb(249, 251, 252);
+    padding: 15px 0px;
+
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: blue;
+    transform: scale(1.1);
+}
+
+.navbar-nav .nav-item .btn {
+    background-color: #3576b8;
+    color: #fff;
+}
+
+
+.navbar-nav .nav-item .btn:hover {
+    background-color: #0d253a;
+    color: #fff;
+}
+
+/*seccion intro*/
+.seccion-intro {
+    padding: 90px;
+}
+
+
+.parrafo-intro {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 0.8;
+}
+
+.titulo-intro {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 0.8;
+    text-transform: uppercase;
+}
+
+.section-link a {
+    padding: 0;
+}
+
+/*  */
+/*seccion investigacion */
+
+.contenedor-cartas-principal {
+    position: relative;
+    width: 46%;
+}
+
+.contenedor-cartas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    background-color: #5cb1b2;
+    padding: 15px;
+}
+
+.card {
+    position: relative;
+    max-width: 450px;
+    max-height: 300px;
+    border: none;
+    background-color: #5cb1b2;
+    border-radius: 10px;
+    /* animation: iniciar 1.5s normal; */
+}
+
+
+
+.card.animada {
+    animation: iniciar 2s ease forwards;
+}
+
+@keyframes iniciar {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    } 
+
+}
+
+.card .icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    padding: 5px 15px;
+    background-color: #5cb1b2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+.fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #5cb1b2;
+    opacity: 1;
+    transform-origin: top right;
+    transform: skew(10deg, 0deg);
+}
+
+
+@media (max-width:700px) {
+    .seccion-intro {
+        padding: 15px;
+    }
+}
