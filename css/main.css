@@ -72,27 +72,52 @@ body {
 
 .contenedor-cartas-principal {
     position: relative;
-    width: 46%;
+    background-color: #5cb1b2;
+    width: 50%;
+    height: 450px;
+    padding-left: 100px;
+    margin-bottom: 0;
 }
 
 .contenedor-cartas {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
+    height: 100%;
+    grid-template-rows: repeat(12,1fr);
+    grid-template-columns: repeat(12, 1fr);
     background-color: #5cb1b2;
-    padding: 15px;
+}
+.card-1{
+    grid-column: 3/7;
+    grid-row: 2/6;
+}
+
+.card-2{
+    grid-column: 8/12;
+    grid-row: 2/6;
+}
+.card-3{
+    grid-column: 3/7;
+    grid-row: 7/11;
+}
+
+.card-4{
+    grid-column: 8/12;
+    grid-row: 7/11;
 }
 
 .card {
     position: relative;
-    max-width: 450px;
-    max-height: 300px;
+    width: 100%;
+    height: 100%;
     border: none;
     background-color: #5cb1b2;
     border-radius: 10px;
     /* animation: iniciar 1.5s normal; */
 }
-
+.card .icon{
+    width: 100%;
+    height: 100%;
+}
 
 
 .card.animada {
@@ -126,7 +151,6 @@ body {
     right: 0;
     bottom: 0;
     opacity: 0;
-    padding: 5px 15px;
     background-color: #5cb1b2;
     display: flex;
     flex-direction: column;
@@ -135,13 +159,16 @@ body {
     align-items: center;
     color: white;
     transition: opacity 0.4s ease, transform 0.4s ease;
+    font-size: 12px;
 }
 
 .card:hover .overlay {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.2);
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5);
 }
+
+
 
 .fondo {
     position: absolute;
@@ -154,6 +181,59 @@ body {
     transform-origin: top right;
     transform: skew(10deg, 0deg);
 }
+
+.fondo-azul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3576b8;
+    opacity: 1;
+    transform-origin: top right;
+    transform: skew(-10deg,0deg);
+}
+.bg-azul{
+  background-color: #3576b8;
+}
+
+
+.fondo-fuccia{  
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0d253a;
+    opacity: 1;
+    transform-origin: top right;
+    transform: skew(10deg,0deg);
+}
+.bg-fuccia{
+    background-color: #0d253a;
+}
+
+/* contenedor-cartas-secundario */
+.contenedor-cartas-secundario{
+    padding-left: 100px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+}
+
+.contenedor-cartas-secundario .contenido{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+
+
+
 
 
 @media (max-width:700px) {
