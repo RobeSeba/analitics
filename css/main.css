@@ -44,6 +44,10 @@ body {
     color: #fff;
 }
 
+.boton-contacto{
+    margin-left: 15px;
+}
+
 /*seccion intro*/
 .seccion-intro {
     padding: 90px;
