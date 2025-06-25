@@ -23,7 +23,7 @@
 <body>
   <header>
     <!-- barra de navegacion -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary contenedor-navegacion">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary contenedor-navegacion sticky-top">
       <div class="container-fluid  justify-content-start">
         <a href="index.html"><img class="logo me-3" src="assets/image/logo.png" alt="logo"></a>
 
@@ -75,16 +75,37 @@
             aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="5000">
-            <img src="assets/image/carrusel/banner-web-1.png" class="d-block w-100" alt="...">
+            <picture>
+              <source srcset="assets/image/Banner-1-mobile.png" media="(max-width: 768px)">
+              
+              <img src="assets/image/carrusel/banner-web-1.png" class="d-block w-100" alt="Banner 1">
+            </picture>
+          </div>
+          <div class="carousel-item " data-bs-interval="2000">
+            <picture>
+              <source srcset="assets/image/Banner-1-mobile.png" media="(max-width: 768px)">
+              
+              <img src="assets/image/carrusel/Banner 1.png" class="d-block w-100" alt="Banner 2">
+            </picture>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="assets/image/carrusel/Banner 2.png" class="d-block w-100" alt="...">
+            <picture>
+              <source srcset="assets/image/Banner-1-mobile.png" media="(max-width: 768px)">
+              
+              <img src="assets/image/carrusel/Banner 2.png" class="d-block w-100" alt="Banner 3">
+            </picture>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="assets/image/carrusel/Banner 3.png" class="d-block w-100" alt="...">
+            <picture>
+              <source srcset="assets/image/Banner-1-mobile.png" media="(max-width: 768px)">
+              
+              <img src="assets/image/carrusel/Banner 3.png" class="d-block w-100" alt="Banner 4">
+            </picture>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -129,6 +150,8 @@
       </section>
       <!-- seccion investigaciones -->
       <section>
+        <!-- rombos  -->
+      <article>
         <!-- seccion 1 -->
         <div class="container-fluid row pf-2">
           <div class=" col-sm-12 col-lg-6 p-0 contenedor-cartas-principal mb-5">
@@ -141,10 +164,8 @@
                   <img src="assets/image/carrusel/lap-prueba.jpg" alt="">
                 </div>
                 <div class="overlay">
-                  <h2>titulo</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laudantium neque reiciendis magni
-                    quaerat voluptas cumque delectus quia! Fuga explicabo quidem, aliquam dolores a at esse corrupti
-                    iste architecto amet.</p>
+                  <h3 style="color: #a8dadc;">Redes De Datos</h3>
+                  <p>Diseñamos,implementamos u optimizamos redes cableadas para garantizar una conectividad rápida y confiable, adaptada a las necesidades de tu negocio</p>
                 </div>
               </div>
               <div class="card card-2">
@@ -152,10 +173,8 @@
                   <img src="assets/image/carrusel/lap-prueba.jpg" alt="">
                 </div>
                 <div class="overlay">
-                  <h2>titulo</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laudantium neque reiciendis magni
-                    quaerat voluptas cumque delectus quia! Fuga explicabo quidem, aliquam dolores a at esse corrupti
-                    iste architecto amet.</p>
+                  <h3 style="color: #a8dadc;">Redes Inalámbricas</h3>
+                  <p>Soluciones de conectividad inalámbrica robustas y seguras, ofreciendo una red escalable y de alto rendimiento para cubrir todas tus necesidades de comunicacion</p>
                 </div>
               </div>
               <div class="card card-3">
@@ -163,10 +182,8 @@
                   <img src="assets/image/carrusel/lap-prueba.jpg" alt="">
                 </div>
                 <div class="overlay">
-                  <h2>titulo</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laudantium neque reiciendis magni
-                    quaerat voluptas cumque delectus quia! Fuga explicabo quidem, aliquam dolores a at esse corrupti
-                    iste architecto amet.</p>
+                  <h3 style="color: #a8dadc;">Comunicacion Unificadas</h3>
+                  <p>Integramos herramientas de comunicación y colaborarión para optimizar la productividad y la eficiencia en tu empresa, garantizando una conexión fluida entre equipos y clientes</p>
                 </div>
               </div>
               <div class="card card-4">
@@ -174,10 +191,8 @@
                   <img src="assets/image/carrusel/lap-prueba.jpg" alt="">
                 </div>
                 <div class="overlay">
-                  <h2>titulo</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laudantium neque reiciendis magni
-                    quaerat voluptas cumque delectus quia! Fuga explicabo quidem, aliquam dolores a at esse corrupti
-                    iste architecto amet.</p>
+                  <h3 style="color: #a8dadc;">Ciberseguridad y Protección</h3>
+                  <p>Protegemos tu infraestructura digital con soluciones de vanguardia, auditando, detectando y mitigando riesgos para salvaguardar la integridad y confidencialidad de tus datos</p>
                 </div>
               </div>
 
@@ -186,7 +201,7 @@
           <div class="col-sm-12 col-lg-6 contenedor-cartas-secundario">
             <div class="contenido">
               <div class="titulo-contenido">
-                <h2>ACCELERATE <br>INVESTIGATION</h2>
+                <h2>DATA CENTER</h2>
               </div>
               <div class="texto-contenido">
                 <P>Improves post-event investigation productivity by pinpointing people and objects of interest with
@@ -336,6 +351,26 @@
             </div>
           </div>
         </div>
+      </article>
+      <article>
+        <h2 class="text-center">TRANSFORM YOUR VIDEO <a href="#" class="btn btn-success mb-3 boton-start ">LET'S GET STARTED</a></h2>
+        <div class="container-lg mt-3 mb-5">
+          <div class="row">
+            <div class="col-sm-12 col-lg-6">
+              <div class="who-title">
+                <h6>Who We Serve</h6>
+              </div>
+              <div class="who-descripcion">
+                <h2>Drive Exponential Value from Video Surveillance Investments</h2>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+              <p class="who-text">BriefCam’s comprehensive and extensive Video Content Analytics platform is deployed by law enforcement and public safety organizations, government and transportation agencies, major enterprises, healthcare and educational institutions, and local communities worldwide. Discover how BriefCam can help your business transform video data into searchable, quantifiable and actionable intelligence.</p>
+            </div>
+          </div>
+        </div>
+      
+      </article>
 
 
       </section>
