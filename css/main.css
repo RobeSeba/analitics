@@ -88,7 +88,7 @@ body {
     height: 100%;
     grid-template-rows: repeat(12, 1fr);
     grid-template-columns: repeat(12, 1fr);
-    background-color: #5cb1b2;
+    background-color: #1d2b43;
 }
 
 .card-1 {
@@ -159,7 +159,7 @@ body {
     right: 0;
     bottom: 0;
     opacity: 0;
-    background-color: #5cb1b2;
+    background-color: #1d2b43;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -193,7 +193,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #5cb1b2;
+    background-color: #1d2b43;
     opacity: 1;
     transform-origin: top right;
     transform: skew(10deg, 0deg);
@@ -205,14 +205,14 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #3576b8;
+    background-color: #7cb15e;
     opacity: 1;
     transform-origin: top right;
     transform: skew(-10deg, 0deg);
 }
 
 .bg-azul {
-    background-color: #3576b8;
+    background-color: #7cb15e;
 }
 
 
