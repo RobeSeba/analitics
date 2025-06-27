@@ -23,24 +23,24 @@ body {
 }
 
 .navbar-nav .nav-item .nav-link {
-    color: black;
+    color: blue;
     font-weight: 500;
     transition: color 0.3s ease, transform 0.3s ease-out;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: blue;
-    transform: scale(1.1);
+    color: #54ac2c;
+    transform: scale(1.05);
 }
 
 .navbar-nav .nav-item .btn {
-    background-color: #3576b8;
+    background-color: #54ac2c;
     color: #fff;
 }
 
 
 .navbar-nav .nav-item .btn:hover {
-    background-color: #0d253a;
+    background-color: #3576b8;
     color: #fff;
 }
 
@@ -52,7 +52,7 @@ body {
     transition: transform 0.5s ease;
 }
 .logo:hover{
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
 /*seccion intro*/
@@ -83,7 +83,6 @@ body {
 
 .contenedor-cartas-principal {
     position: relative;
-    background-color: #5cb1b2;
     width: 50%;
     height: 450px;
     padding-left: 100px;
