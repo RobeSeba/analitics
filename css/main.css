@@ -48,6 +48,13 @@ body {
     margin-left: 15px;
 }
 
+.logo{
+    transition: transform 0.5s ease;
+}
+.logo:hover{
+    transform: scale(1.15);
+}
+
 /*seccion intro*/
 .seccion-intro {
     padding: 90px;
