@@ -205,14 +205,14 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #7cb15e;
+    background-color: #5ec031;
     opacity: 1;
     transform-origin: top right;
     transform: skew(-10deg, 0deg);
 }
 
 .bg-azul {
-    background-color: #7cb15e;
+    background-color: #5ec031;
 }
 
 
@@ -333,6 +333,9 @@ body {
 .card:hover .overlay-small p{
     font-size: 14px;
     
+}
+.icon-image{
+    background-color: #0d253a;
 }
 
 
