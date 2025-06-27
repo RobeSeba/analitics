@@ -108,7 +108,7 @@ body {
 }
 
 .icon-ia{
-    background-color: #5ec031;
+    background-color: #54ac2c;
 }
 
 .card-1 {
@@ -225,14 +225,14 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #5ec031;
+    background-color: #54ac2c;
     opacity: 1;
     transform-origin: top right;
     transform: skew(-10deg, 0deg);
 }
 
 .bg-azul {
-    background-color: #5ec031;
+    background-color: #54ac2c;
 }
 
 
