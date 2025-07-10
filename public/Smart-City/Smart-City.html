@@ -2,129 +2,231 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- link de bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart City</title>
+  <!-- link de bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/css/general.css">
+  <!--  -->
+  <link rel="stylesheet" href="/css/smart-city.css">
 
-
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary contenedor-navegacion sticky-top">
-            <div class="container-fluid  justify-content-start">
-                <a href="../../index.html"><img class="logo me-3" src="../../assets/image/logo.png" alt="logo"></a>
+  <header>
+    <!-- barra de navegacion -->
+    <nav class=" navbar navbar-expand-lg bg-body-tertiary contenedor-navegacion">
+      <div class="container-fluid  justify-content-start">
+        <a href="index.html"><img class="logo me-3" src="/assets/image/logo.png" alt="logo" class="logo"></a>
+        <!-- Botón span solo visible en móviles -->
+        <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menú horizontal visible en pantallas grandes -->
+        <div class="d-none d-lg-flex justify-content-between  align-items-center">
+          <!-- Menú (izquierda) -->
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="../data-center/data-center.html">Data Center</a></li>
+            <li class="nav-item"><a class="nav-link"
+                href="../Inteligencia-Artificial/Inteligencia-Artificial.html">Inteligencia Artificial</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Smart-City.html">Smart City</a></li>
+            <li class="nav-item"><a class="nav-link btn boton-contacto" href="https://wa.me/51988371879"
+                target="_blank">Contactanos</a></li>
+          </ul>
+        </div>
 
-                <!-- Botón span solo visible en móviles -->
-                <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <!-- Offcanvas solo para móviles -->
+        <div class="offcanvas offcanvas-end d-lg-none menu-off" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link active" href="../data-center/data-center.html">Data Center</a>
+              </li>
+              <li class="nav-item"><a class="nav-link"
+                  href="../Inteligencia-Artificial/Inteligencia-Artificial.html">Inteligencia Artificial</a></li>
+              <li class="nav-item"><a class="nav-link active" href="Smart-City.html">Smart City</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://wa.me/51988371879" target="_blank">¿Necesitas
+                  ayuda?</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Banner Dividido -->
+    <div class="container-fluid">
 
-                <!-- Menú horizontal visible en pantallas grandes -->
-                <div class="d-none d-lg-flex justify-content-between  align-items-center">
-                    <!-- Menú (izquierda) -->
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Data Center
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../data-center/data-center.html">Home Data</a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">Comunicacion Unificada</a></li>
-                                <li><a class="dropdown-item" href="#">Ciberseguridad y Protección</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Inteligencia Artificial
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item"
-                                        href="public/Inteligencia-Artificial/Inteligencia-Artificial.html">Home IA</a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">Analitica De Video</a></li>
-                                <li><a class="dropdown-item" href="#">Machine Learning</a></li>
-                                <li><a class="dropdown-item" href="#">Automatizacion Inteligente</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item"><a class="nav-link" href="public/Smart-City/Smart-City.html">Smart City</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link btn boton-contacto" href="https://wa.me/51988371879"
-                                target="_blank">Contactanos</a></li>
-                    </ul>
+    </div>
+  </header>
+  <main>
+    <!-- Seccion Servicios -->
+    <section class="container-xxl">
+      <div class="titulo-seccion">
+        <h3>Servicio De Smart City</h3>
+      </div>
+      <!-- Fila 1 -->
+      <div class="row">
+        <!-- servicio 1 -->
+        <div class="col-sm-12 col-lg-6">
+          <div class="card mb-3 item-servicio" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="/assets/image/Servicios/Smart-City/servicio-1.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Gestión inteligente de tráfico</h5>
+                  <p class="card-text">Sensores y algoritmos que ajustan semáforos en tiempo real para evitar congestiones y mejorar movilidad.</p>
                 </div>
-
-                <!-- Offcanvas solo para móviles -->
-                <div class="offcanvas offcanvas-end d-lg-none menu-off" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Cerrar"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Data Center
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Comunicacion Unificada</a></li>
-                                    <li><a class="dropdown-item" href="#">Ciberseguridad y Protección</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#mas-informacion">Distribuidores</a></li>
-                            <li class="nav-item"><a class="nav-link" href="https://wa.me/51988371879"
-                                    target="_blank">¿Necesitas
-                                    ayuda?</a></li>
-                        </ul>
-                    </div>
-                </div>
+              </div>
             </div>
-        </nav>
-    </header>
+          </div>
+        </div>
 
-    <main>
-        <h2>Smart City</h2>
-    </main>
+        <div class="col-sm-12 col-lg-6">
+          <!-- servicio 2 -->
+          <div class="card mb-3 item-servicio" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="/assets/image/Servicios/Smart-City/servicio-2.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Iluminación pública eficiente</h5>
+                  <p class="card-text">Luminarias LED automatizadas que se adaptan según presencia o luz solar para reducir consumo energético.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+      <!-- Fila 2 -->
+      <div class="row">
+        <!-- servicio 3 -->
+        <div class="col-sm-12 col-lg-6">
+          <div class="card mb-3 item-servicio" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="/assets/image/Servicios/Smart-City/servicio-3.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Monitoreo ambiental urbano</h5>
+                  <p class="card-text">Estaciones IoT que detectan calidad del aire, ruido y temperatura para mejorar la planificación urbana.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-lg-6">
+          <!-- servicio 4 -->
+          <div class="card mb-3 item-servicio" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="/assets/image/Servicios/Smart-City/servicio-4.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Seguridad con videovigilancia AI</h5>
+                  <p class="card-text">Cámaras con reconocimiento facial y detección de eventos para respuesta rápida ante situaciones críticas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- fila 3 -->
+      <div class="row">
+        <!-- servicio 1 -->
+        <div class="col-sm-12 col-lg-6">
+          <div class="card mb-3 item-servicio" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="/assets/image/Servicios/Smart-City/servicio-5.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Estacionamiento inteligente</h5>
+                  <p class="card-text">Sistemas de geolocalización que identifican espacios libres y guían a los conductores en tiempo real.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-lg-6">
+          <!-- servicio 2 -->
+          <div class="card mb-3 item-servicio" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="/assets/image/Servicios/Smart-City/servicio-6.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Gestión de residuos automatizada</h5>
+                  <p class="card-text">Contenedores conectados que alertan sobre llenado y optimizan rutas de recolección para reducir emisiones.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="">
+    <div class="container-xxl">
+      <div class=" row">
+        <div class="col-lg-3">
+          <ul class="lista">
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Data Center</a></li>
+            <li><a href="">Inteligencia Artificial</a></li>
+            <li><a href="">Smart City</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="contenedor-imagen">
+            <img src="/assets/image/logo.png" alt="Logo" class="imagen-logo">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <ul class="lista">
+            <li>Contacto</li>
+            <li>+51 988 371 879</li>
+            <li>Arturo@gmail.com</li>
+            <li>Santa Anita MALL Aventura</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

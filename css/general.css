@@ -1,24 +1,104 @@
-.footer{
-    background-color: white;
-    margin: 0 !important;
-    
+/*colores*/
+.blue {
+    color: #3576b8;
 }
-li a{
-    text-decoration: none;
+
+/* formateo de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans";
+}
+
+
+/* header nav */
+
+.contenedor-navegacion {
+    background-color: rgb(249, 251, 252);
+    padding: 15px 0px;
+
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: blue;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #54ac2c;
+    transform: scale(1.05);
+}
+
+.navbar-nav .nav-item .btn {
+    background-color: #54ac2c;
+    color: #fff;
+}
+
+
+.navbar-nav .nav-item .btn:hover {
+    background-color: #3576b8;
+    color: #fff;
+}
+
+.boton-contacto {
+    margin-left: 15px;
+}
+
+.logo{
+    transition: transform 0.5s ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.active{
+    color: green !important;
+}
+
+
+
+
+.item-servicio{
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.item-servicio:hover{
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 6px 6px 6px rgba(77, 141, 224, 0.5);
+}
+
+
+
+
+
+footer{
+    background-color: #225EDA;
+    padding: 30px 0px;
+}
+
+.lista{
+    list-style: none;
     color: white;
-    font-size: 1.1rem;
 }
 
-li a i {
-    display: inline-block;
-    transition: transform 0.3s ease-in-out;
+.lista a{
+    color: white;
+    text-decoration: none;
 }
-
-li a:hover i{
-    color: #00bcd4;
-    transform: scale(1.5) !important;
+.contenedor-imagen{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-
+.imagen-logo{
+    color: white;
+}
 
 
 .col-md-6 {

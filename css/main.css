@@ -1,61 +1,3 @@
-/*colores*/
-.blue {
-    color: #3576b8;
-}
-
-/* formateo de estilos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Open Sans";
-    padding-top: 95px;
-}
-
-
-/* header nav */
-
-.contenedor-navegacion {
-    background-color: rgb(249, 251, 252);
-    padding: 15px 0px;
-
-}
-
-.navbar-nav .nav-item .nav-link {
-    color: blue;
-    font-weight: 500;
-    transition: color 0.3s ease, transform 0.3s ease-out;
-}
-
-.navbar-nav .nav-item .nav-link:hover {
-    color: #54ac2c;
-    transform: scale(1.05);
-}
-
-.navbar-nav .nav-item .btn {
-    background-color: #54ac2c;
-    color: #fff;
-}
-
-
-.navbar-nav .nav-item .btn:hover {
-    background-color: #3576b8;
-    color: #fff;
-}
-
-.boton-contacto {
-    margin-left: 15px;
-}
-
-.logo{
-    transition: transform 0.5s ease;
-}
-.logo:hover{
-    transform: scale(1.1);
-}
 
 /*seccion intro*/
 .seccion-intro {
@@ -78,6 +20,10 @@ body {
 
 .section-link a {
     padding: 0;
+}
+
+.carrusel{
+    padding-top: 95px;
 }
 
 /*  */
