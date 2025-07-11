@@ -37,7 +37,7 @@
         <!-- Menú horizontal visible en pantallas grandes -->
         <div class="d-none d-lg-flex justify-content-between  align-items-center">
           <!-- Menú (izquierda) -->
-          <ul class="navbar-nav me-auto">
+          <ul class="navbar-nav me-auto menu-desktop">
             <li class="nav-item"><a class="nav-link" href="../../index.html">Inicio</a></li>
             <li class="nav-item"><a class="nav-link" href="../data-center/data-center.html">Data Center</a></li>
             <li class="nav-item"><a class="nav-link"
@@ -77,14 +77,14 @@
   </header>
   <main>
     <!-- Seccion Servicios -->
-    <section class="container-xxl">
+    <section class="container-xl seccion-servicios">
       <div class="titulo-seccion">
         <h3>Servicio De Smart City</h3>
       </div>
       <!-- Fila 1 -->
-      <div class="row">
+      <div class="row contenedor-servicio">
         <!-- servicio 1 -->
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-12 col-lg-6 servicio">
           <div class="card mb-3 item-servicio" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
@@ -92,7 +92,7 @@
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Gestión inteligente de tráfico</h5>
+                  <h6 class="card-title">Gestión inteligente de tráfico</h6>
                   <p class="card-text">Sensores y algoritmos que ajustan semáforos en tiempo real para evitar congestiones y mejorar movilidad.</p>
                 </div>
               </div>
@@ -100,7 +100,7 @@
           </div>
         </div>
 
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-12 col-lg-6 servicio">
           <!-- servicio 2 -->
           <div class="card mb-3 item-servicio" style="max-width: 540px;">
             <div class="row g-0">
@@ -109,7 +109,7 @@
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Iluminación pública eficiente</h5>
+                  <h6 class="card-title">Iluminación pública eficiente</h6>
                   <p class="card-text">Luminarias LED automatizadas que se adaptan según presencia o luz solar para reducir consumo energético.</p>
                 </div>
               </div>
@@ -119,9 +119,9 @@
       </div>
 
       <!-- Fila 2 -->
-      <div class="row">
+      <div class="row contenedor-servicio">
         <!-- servicio 3 -->
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-12 col-lg-6 servicio">
           <div class="card mb-3 item-servicio" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
@@ -129,7 +129,7 @@
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Monitoreo ambiental urbano</h5>
+                  <h6 class="card-title">Monitoreo ambiental urbano</h6>
                   <p class="card-text">Estaciones IoT que detectan calidad del aire, ruido y temperatura para mejorar la planificación urbana.</p>
                 </div>
               </div>
@@ -137,7 +137,7 @@
           </div>
         </div>
 
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-12 col-lg-6 servicio">
           <!-- servicio 4 -->
           <div class="card mb-3 item-servicio" style="max-width: 540px;">
             <div class="row g-0">
@@ -146,7 +146,7 @@
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Seguridad con videovigilancia AI</h5>
+                  <h6 class="card-title">Seguridad con videovigilancia AI</h6>
                   <p class="card-text">Cámaras con reconocimiento facial y detección de eventos para respuesta rápida ante situaciones críticas.</p>
                 </div>
               </div>
@@ -156,9 +156,9 @@
       </div>
 
       <!-- fila 3 -->
-      <div class="row">
+      <div class="row contenedor-servicio">
         <!-- servicio 1 -->
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-12 col-lg-6 servicio">
           <div class="card mb-3 item-servicio" style="max-width: 540px;">
             <div class="row g-0">
               <div class="col-md-4">
@@ -166,7 +166,7 @@
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Estacionamiento inteligente</h5>
+                  <h6 class="card-title">Estacionamiento inteligente</h6>
                   <p class="card-text">Sistemas de geolocalización que identifican espacios libres y guían a los conductores en tiempo real.</p>
                 </div>
               </div>
@@ -174,7 +174,7 @@
           </div>
         </div>
 
-        <div class="col-sm-12 col-lg-6">
+        <div class="col-sm-12 col-lg-6 servicio">
           <!-- servicio 2 -->
           <div class="card mb-3 item-servicio" style="max-width: 540px;">
             <div class="row g-0">
@@ -183,7 +183,7 @@
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Gestión de residuos automatizada</h5>
+                  <h6 class="card-title">Gestión de residuos automatizada</h6>
                   <p class="card-text">Contenedores conectados que alertan sobre llenado y optimizan rutas de recolección para reducir emisiones.</p>
                 </div>
               </div>
@@ -206,8 +206,21 @@
           </ul>
         </div>
         <div class="col-lg-6">
-          <div class="contenedor-imagen">
+          <div class="row flex-column">
+            <div class="col-12">
+              <div class="contenedor-imagen">
             <img src="../../assets/image/logo.png" alt="Logo" class="imagen-logo">
+          </div>
+            </div>
+            <div class="col-12">+
+             <ul class="lista-terminos">
+              <li>Legal</li>
+              <li>Privacidad</li>
+              <li>Terminos</li>
+              <li>Cookies</li>
+              <li>Acceptable Use</li>
+            </ul>
+            </div>
           </div>
         </div>
         <div class="col-lg-3">
