@@ -24,7 +24,7 @@ body {
 }
 
 .navbar-nav .nav-item .nav-link {
-    color: blue;
+    color: #3576b8;
     font-weight: 500;
     transition: color 0.3s ease, transform 0.3s ease-out;
 }
@@ -149,4 +149,29 @@ footer{
 }
 .titulo-seccion{
     margin: 30px 0px;;
+}
+
+
+.item-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.icon{
+    color: #225EDA;
+}
+
+.lista-servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.item-area{
+    gap: 10px;
 }
