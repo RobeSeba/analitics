@@ -49,6 +49,10 @@ body {
 .boton-contacto {
     margin-left: 15px;
 }
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    gap: 25px;
+}
 
 
 .logo{
