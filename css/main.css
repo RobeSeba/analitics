@@ -350,6 +350,9 @@
     .seccion-intro {
         padding: 15px;
     }
+    .contenedor-grid{
+        display: none;
+    }
 }
 
 @media (max-width: 500px) {
