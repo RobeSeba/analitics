@@ -1,3 +1,32 @@
+.contenedor-banner{
+    overflow: hidden;
+}
 .imagen-banner{
     width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.contenedor-banner:hover .banner-overlay {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+.contenedor-banner:hover .imagen-banner {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
 }

@@ -104,12 +104,19 @@ body {
 
 footer{
     background-color: #225EDA;
-    padding: 30px 0px;
+    padding: 35px 0px;
 }
 
 .lista{
     list-style: none;
     color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contacto{
+    padding-left: 45px;
 }
 
 .lista a{
@@ -161,8 +168,20 @@ footer{
 }
 
 .icon{
-    color: #225EDA;
+    background-color: #225EDA;
+  color: white;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;  /* Puedes ajustar el tamaño según lo necesites */
+  height: 30px;
+
 }
+.custom-icon i {
+  font-size: 24px; /* Ajusta el tamaño del ícono */
+}
+
 
 .lista-servicios{
     display: flex;
@@ -188,6 +207,7 @@ picture {
     width: 100%;
     
 }
+
 .imagen{
     width: 100%;
     height: auto;
@@ -197,6 +217,7 @@ picture {
 .sombra{
     text-shadow: 1px 1px 5px rgb(108, 106, 110);
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 @media (max-width: 480px) {
